@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;/* *is used to select all the elements*/
+    box-sizing: border-box;/*it is used set the height and width of all the containers by default */
+}
+html{
+    background-color: white;
+    color: #555;
+    font-family: Lato,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;/*used to minimise the time taken by browser to load our web page optimizebility will space the letter well,  */
+    overflow-x: hidden;
+}/* normalize .css is used to render all the properties  by all the browser*/
+
+/* media property is required to make the website responsive*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;/* auto iis used to set the element to the center while 0 at that place is used to put the at margin 0 from the top */
+}
+header{
+ background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');  /* in the linear gradient we need to put the color with rgb and fourth color as parameter */ 
+ height: 100vh;
+ background-size: cover;/* used to cover the whole background width*/ 
+ background-position: center;
+ background-attachment: fixed;
+}
+h1{margin-top: 0px;
+    margin-bottom: 20px;
+   
+    padding: 0;
+    color: white;
+    font-size: 240%;/* for all the elements in the html tag the value is 20px and we have taken the size in per as it help us to increase the responsiveness of the website*/
+     font-weight: 300;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     word-spacing: 3px;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 50%;
+    /* transform property is used to turn/rotate the skew and scale , translate function takes 2 arg one for the left side and one for the right side  */
+    transform: translate(-50%,50%);
+    padding: 0;
+}
+.btn:link,.btn:visited{
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color 0.2s, border 0.2s color 0.2s;/* it is important */
+}
+.btn-full:link,.btn-full:visited,
+input[type=submit]{
+    background-color: #e67e22;
+    color: white;
+    border: 1px solid #e67e22;
+    margin-right: 25px;
+    border-radius: 200px;
+}
+.btn-ghost:link,.btn-ghost:visited,input[type=submit]{/* same effect for if btn is visited and  not visited*/
+    border: 1px solid #e67e22;
+    color: #e67e22;
+    border-radius: 200px;
+
+}.btn:hover,btn:active,input[type=submit]{
+    background-color: #cf6d17;
+}
+.btn-ghost:hover,.btn-ghost:active,input[type=submit]{
+    border: 1px solid #cf6d17;
+    color: white;
+}
+.btn-full:hover,.btn-full:active,input[type=submit]{
+    border: 1px solid #cf6d17;
+}
+.logo{
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 65px;
+    margin-left: 0%;
+}
+
+.main-nav li{
+
+ display: inline-block;
+ text-decoration: none;
+ margin-left: 30px;
+
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0px;
+    transition: border-bottom;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e76e22;
+}
+section{
+    padding: 80px 0px;
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    
+}
+h2:after
+{
+   display: block;
+   height: 2px;
+   background-color: #e67e22;
+   content: "";
+   width: 100px;
+   margin: 0 auto;
+   margin-top: 30px;
+   letter-spacing: 1px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 100%;
+    margin: 5%;
+    text-align: center;
+   ;
+   
+
+}
+.box{
+    padding: 1%;
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom:15px;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+
+}
+.icon-big{
+    /* we can increase the six=ze of all elements using font size*/
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+ 
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1px;
+    
+
+}
+.meal-photo
+{  height: 100%;
+    width: 100%;
+    margin: 0;/* we are using normalize css file so it is good to use the margin as zero as it gives some margin and padding to every element*/
+        overflow: hidden;/*extra part of the img will be hidden from the user*/
+        background-color: black;
+        opacity: 0.7;
+        transition: transform 0.5s, opacity 0.5s;
+    height: 300px;}
+    
+    
+
+.meal-photo img{
+    width: 100%;
+    height: 300px;
+    transform: scale(1.15);/*it is used to zoom the picture*/
+    background-color: black;
+    opacity: 0.7;
+}
+   
+   
+    
+
+
+.section-meals{
+    padding: 0;
+}
+.meal-photo img:hover{
+    transform: scale(2.03);
+    opacity: 1;
+}
+.section-feature .long-copy{
+    margin: 30px;
+}.works-step{
+    margin-bottom: 50px;
+    /*margin-right: 25px;*/
+
+}
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+
+}
+.steps-box:last-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 70px;
+
+}
+.app-screen{
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.works-step div{
+    color:#e67e22;
+    border:  4px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+   
+    padding: 10px;
+    font-size: 20px;
+}
+.btn-app img{
+  height: 50px;
+  width: auto;
+}
+.section-steps{
+    background-color: #f4f4f4f4;
+}
+/*.clear-fix{
+    zoom:1
+}
+.clear-fix::after{
+    content:'';
+    clear: both;
+    display: block;
+    height:0 
+    ;
+    visibility: hidden;
+} this for removing the extra space caused due to float*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom:15px ;
+}
+.city-feature{
+margin-bottom: 30px;
+
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+   line-height: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+a:link,
+a:visited{
+    color:#e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom:1px ;
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+.selection-testimonial{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://s.inyourpocket.com/gallery/aarhus/2019/12/shutterstock-340542164.jpg')  ;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding:2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top:40px 
+    ;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;/* used to appear the image and author name in next line*/
+    margin-top: 25px;
+}
+cite img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote:before{/* to apply the styling before the content*/
+    content: '\201C';/*used to print the qutation mark*/
+    font-size: 500%;
+    display: block;
+    position: absolute;/* need to be applied to the parent element*/
+    left: -3px;
+    top: 0;
+
+}
+.section-plan{
+    background-color: #f4f4f4;
+
+}
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+.plan-price-meal{
+    font-size: 80%;
+
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-box ul{
+    list-style: none;
+    
+}
+.plan-box ul li{
+    padding: 5px 0px;
+}
+.plan-box div:last-child
+{
+    text-align: center;
+    border: 0;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.section-form{
+    width:60%;
+    margin: 0 auto;/* to put the form in the center*/
+}
+input[type=text],
+input[type=email],
+select, textarea{
+ width: 100%;
+ padding: 7px;
+border-radius: 3px;
+border: 1px solid #ccc;
+
+}
+textarea{
+    height: 100%;
+
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px;
+
+}
+input[type=submit]{
+margin: 20px;
+width: 200px;
+align-items: left;
+padding-left: 0%;
+margin-left: 0%;
+}
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 50px;
+
+} 
+.footer-nav{
+ float: left;
+ list-style: none;
+
+}
+.social-link{
+    
+    float: right;
+}
+.footer-nav li,
+.social-link li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:active,
+.social-link li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+
+
+}
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+color: #ddd;
+}
+footer p{
+    width: 100%;
+    color: #888;
+   text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+    
+}
+.fb:hover{
+    color: #3b5998;
+
+}
+.google:hover{
+    color: #dd4b39;
+}
+.twitter:hover{
+    color: #00aced;
+}
+.insta:hover{
+    color: #517fa4;
+}
+.social-link li a:active,
+.social-link li a:visited{
+    font-size: 500%;
+}/* media query is used to make web page responsive
+View port - it is meta tag that must be shown in header section and it is for user visible section */

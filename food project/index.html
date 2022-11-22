@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,900&display=swap" rel="stylesheet">
+
+        <title>
+           the food project
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <link  rel="stylesheet" href="resource/css/style.css"><!--remember to give the complete directory and use the rel attribute-->
+        <link  rel="stylesheet" href="vendors/css/normalize.css"><!--vendors folder is used to store different type of framework-->
+        <link rel="'stylesheet" href="vendors/css/css/10cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/11cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/12cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/2cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/3cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/4cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/5cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/6cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/7cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/8cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/9cols.css">
+        <link rel="'stylesheet" href="vendors/css/css/col.css">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 1.0 so that a person can not zoom in or zoom out-->
+        <!-- FOR THE RESPONSIVE OF THE WEBSITE-->
+    </head>
+    <body>
+       <header><!-- acts like a div but tells the browser that it must be placed baove all-->
+       <nav>
+      <div class="row">
+          <div class="col span-1-of-3">
+            <img src="resource/css/img/cutlery.png" alt="logo-img" class="logo">
+            <ul class="main-nav">
+              <li>
+                <a href="#feature" >Food Dilevery</a>
+              </li>
+              <li>
+                  <a href="#hiw">How it works </a>
+              </li>
+              <li>
+                  <a href="#city">Our cities </a>
+                </li>
+                <li>
+                  <a href="#signup">Sign Up</a>
+                </li>
+              </div>
+            </div>
+      
+          </ul>
+          </div>
+
+            
+        
+        <div class="col span-1-of-3">
+        
+        
+       </nav>
+        <div class="hero-text-box">
+          <h1>GoodBye junk food<br> Hello super healthy food</h1>
+          <a href="#plan" class="btn btn-full">I am Hungry</a><!-- # is used to keep the user at the same page-->
+           <a href="#feature" class="btn btn-ghost"> Show me more </a></div>
+       </header>
+       <section class="section-features" id="feature">
+         <div class="row">
+                <h2> Get food fast not fast food </h2>
+                <p class =" long-copy">
+                 Hello we are Omnifood , your new premiun food dilevery service.
+                 We know that you are aalways busy so we are here to cook for you 
+                </p>
+                <div class="row">
+                  <div class="col span-1-of-4 box" ><!--  property 1-of-4 is described in the col css or the grid css it is used to implement the grid-->
+                    <ion-icon class =" icon-big" name="infinite-outline"></ion-icon>
+                    <h3>
+                    Up to 365 days/year
+                   </h3>
+                   <p>
+                  Never cook again! We really mean it . Our subscription plan is upto 365 days/years coverage . 
+                  You can choose to order more flexible if that's your style
+                   </p>
+                  </div>
+                  <div class="col span-1-of-4 box"><!--  property 1-of-4 is described in the col css or the grid css it is used to implement the grid-->
+                    <ion-icon class =" icon-big" name="stopwatch-outline"></ion-icon>
+                    <h3>
+                     Ready in 20  min 
+                    </h3>
+                    <p>
+                   20 min away from the tasty food . Get your food ready in 20 min only 
+                   The order will be delivered to you at your doorsteps
+                    </p>
+                   </div>
+                   <div class="col span-1-of-4 box"><!--  property 1-of-4 is described in the col css or the grid css it is used to implement the grid-->
+                    <ion-icon class =" icon-big" name="fast-food-outline"></ion-icon>
+                    <h3>
+                     100% organic 
+                    </h3>
+                    <p>
+                   All th evegetable used in the cooking are free from pesticides 
+                   We here in omnipresent food takes care of your health 
+                    </p>
+                   </div>
+                   <div class="col span-1-of-4 box"><!--  property 1-of-4 is described in the col css or the grid css it is used to implement the grid-->
+                    
+                    <ion-icon  class =" icon-big" name="cart-outline"></ion-icon><h3>
+                     Order anytime
+                     
+                    </h3>
+                    <p>
+                   You can orde ranytime we know that you are busy , we respect your schedule 
+                    The service is to make you feel confortable 
+                    </p>
+                   </div>
+                </div>
+         </div>
+       </section>
+       <section class="section-meals"  data-aos="fade-in" data-aos-duration="2000">
+        <!-- row class is used t align the lements in the middle of the web page-->
+        <ul class="meals-showcase clearfix">
+          <li>
+            <figure class="meal-photo"> <!-- the figure tag incapculate the image and its correcponding discription-->
+                <img src="resource/css/img/paneer.jpg" class="meal-photo">
+            </figure>
+          </li>
+          <li>
+            <figure class="meal-photo"> <!-- the figure tag incapculate the image and its correcponding discription-->
+                <img src="resource/css/img/saag.jpg" class="meal-photo">
+            </figure>
+          </li>
+          <li>
+            <figure class="meal-photo"> <!-- the figure tag incapculate the image and its correcponding discription-->
+                <img src="resource/css/img/poha.jpg" class="meal-photo">
+            </figure>
+          </li>
+          <li>
+            <figure class="meal-photo"> <!-- the figure tag incapculate the image and its correcponding discription-->
+                <img src="resource/css/img/southindianfood.jpg" class="meal-photo">
+            </figure>
+          </li>
+        </ul>
+       </section>
+       <section class="section-steps" id="hiw">
+        <div class="row">
+          <h2>How it works, as simple as 1 2 3</h2>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-2 steps-box"><img src="resource/css/img/phone.jpg" alt="phone" class="app-screen">
+          </div>
+          <div class="col span-1-of-2 steps-box">
+            <div class="works-step">
+              <div>1
+
+              </div>
+              <p> Choose plan that fits best for your need and sigh up today</p>
+            </div>
+            <div class="works-step">
+              <div>2
+                
+              </div>
+              <p> Pay for the plan and download the app</p>
+            </div>
+            <div class="works-step">
+              <div>3
+                
+              </div>
+              <p> You are done start ordering</p>
+            </div>
+            <div class="btn-app"> 
+              <a href="#"><img src="resource/css/img/app-store-logo.png" alt=""></a>
+              <a href="#"><img src="resource/css/img/google_app_store.jpg" alt=""></a>
+              </div>
+          </div>
+        </div>
+        
+       </section>
+       <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000"> 
+        <div class="row">
+          <h2>We're curently in these cities</h2>
+          
+        </div>
+        <div class="row">
+           <div class="col span-1-of-4 box">
+            <img src="resource/css/img/lisbon-2.jpg" alt="">
+            <h3>Lisbon</h3>
+            <div class="city-feature">
+              <ion-icon name="person-circle-outline" class="icon-small"></ion-icon> 1600+ happy eaters
+              </div>
+              <div class="city-feature">
+              <ion-icon name="star-sharp" class="icon-small"></ion-icon>50+ chefs
+              </div>
+              <div class="city-feature">
+              <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+              <a href="#">omnifood_tunder</a>
+              </div>
+            
+           </div>
+           <div class="col span-1-of-4 box">
+            <img src="resource/css/img/berlin.jpg" alt="">
+            <h3>Berlin</h3>
+            <div class="city-feature">
+              <ion-icon name="person-circle-outline" class="icon-small"></ion-icon> 2000+ happy eaters
+              </div>
+              <div class="city-feature">
+              <ion-icon name="star-sharp" class="icon-small"></ion-icon>30+ chefs
+              </div>
+              <div class="city-feature">
+              <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+              <a href="#">omnifood_tunder</a>
+              </div>
+            
+           </div>
+           <div class="col span-1-of-4 box">
+            <img src="resource/css/img/london.jpg" alt="">
+            <h3>London</h3>
+            <div class="city-feature">
+              <ion-icon name="person-circle-outline" class="icon-small"></ion-icon> 1500+ happy eaters
+              </div>
+              <div class="city-feature">
+              <ion-icon name="star-sharp" class="icon-small"></ion-icon>60+ chefs
+              </div>
+              <div class="city-feature">
+              <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+              <a href="#">omnifood_tunder</a>
+              </div>
+            
+           </div>
+           <div class="col span-1-of-4 box">
+            <img src="resource/css/img/san-fransisco.jpg" alt="">
+            <h3>San-Fransisco</h3>
+            <div class="city-feature">
+              <ion-icon name="person-circle-outline" class="icon-small"></ion-icon> 2000+ happy eaters
+              </div>
+              <div class="city-feature">
+              <ion-icon name="star-sharp" class="icon-small"></ion-icon>70+ chefs
+              </div>
+              <div class="city-feature">
+              <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+              <a href="#">omnifood_tunder</a> 
+              </div>
+            </div>
+           
+        </div>
+        
+
+       </section>
+       <section class="selection-testimonial" data-aos="fade-in" data-aos-duration="2000">
+         <div class="row"> <h2>Our customer can't live without this</h2></div>
+         <div class="row">
+          <div class="col span-1-of-3">
+            <blockquote><!-- used to keep the author name and quote in single unit-->
+             Omnifood is awesome, I recently launched a start-up which leaves me with just no time for cooking, so Omnifood is a life-saver.Now that I got used to it, I could not live without daily meal
+            <cite><img src="resource/css/img/cust-1.jpg" alt="">Alberto Duncan</cite>
+            </blockquote>
+          </div>
+          <div class="col span-1-of-3">
+            <blockquote><!-- used to keep the author name and quote in single unit-->
+            Inexpensiv, healthy anf great- tasting meal, delivered right to my home.Me and my family is in love with it
+            <cite style="margin-top: 110px;"><img src="resource/css/img/cust-3.jpg"  alt="">Joana Silva</cite>
+            </blockquote>
+          </div>
+          <div class="col span-1-of-3">
+            <blockquote><!-- used to keep the author name and quote in single unit-->
+             I was looking for easy and fast food dilevery service in the san Franciso.Best food dilevery service in the bay area.Keep up !!!
+            <cite style="margin-top: 80px;"><img src="resource/css/img/cust-2.jpg" alt="">Milton Chapman</cite>
+            </blockquote>
+          </div>
+         </div>
+        
+       </section>
+       <section class="section-plan" id="plan" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row"> 
+          <h2>Start Eating Healthy Today</h2>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3" >
+            <div class = "plan-box">
+              <div data-aos="zoom-in" data-aos-duration="2000"><h3>Premium</h3>
+              <p class="plan-price">$339<span>/month</span></p>
+              <p class="plan-price-meal">That's only 13.905$ per meal</p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline"class = "icon-small"></ion-icon>1 meal everyday
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Order 24*7
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Access to newest creation
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Free delivery
+                </li>
+              </ul>
+            </div>
+            <div >
+                <a href="#" class="btn btn-full">Sign-up</a>
+            </div>
+            </div>
+          </div>
+        
+        
+          <div class="col span-1-of-3">
+            <div class = "plan-box" >
+              <div  data-aos="zoom-in" data-aos-duration="2000"><h3>Pro</h3>
+              <p class="plan-price">$199<span>/month</span></p>
+              <p class="plan-price-meal">That's only 10.905$ per meal</p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>1 meal in 10 days
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Order 24*7
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Access to newest creation
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Free delivery
+                </li>
+              </ul>
+            </div>
+            <div >
+                <a href="#" class="btn btn-ghost">Sign-up</a>
+            </div>
+            </div>
+          </div>
+        
+        
+          <div class="col span-1-of-3">
+            <div class = "plan-box">
+              <div data-aos="zoom-in" data-aos-duration="2000"><h3>Starter</h3>
+              <p class="plan-price">$9<span>/meal</span></p>
+              <p class="plan-price-meal">   
+                $nbsp <!-- for extra space-->
+              </p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>1 meal everyday
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Order 24*7
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Access to newest creation
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline" class = "icon-small"></ion-icon>Free delivery
+                </li>
+              </ul>
+            </div>
+            <div >
+                <a href="#" class="btn btn-ghost">Sign-up</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <section class="section-form">
+          <div class="row">
+            <h2>We're happy to hear from you </h2> 
+
+          </div>
+          
+            <form action="#" method="POST" class="contact-form" id="signup">
+              <div class="row">
+                <div class =" col span-1-of-3">
+                  <label for="">Name</label>
+
+                </div>
+                <div class=" col span-2-of-3">
+                  <input type="text" name="name" id="name" placeholder="Your name" required>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class =" col span-1-of-3">
+                  <label for="">Email</label>
+
+                </div>
+                <div class=" col span-2-of-3">
+                  <input type="email" name="email" id="email" placeholder="Your email" required>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class =" col span-1-of-3">
+                  <label for="">How do you find us</label>
+
+                </div>
+                <div class=" col span-2-of-3">
+                 <select name="find-us" id="find-us">
+                  <option value="friends">Friends</option>
+                  <option value="search">search</option>
+                  <option value="ad">Advertisnment</option>
+                  <option value="Others">Other</option>
+
+                 </select>
+
+                </div>
+              </div>
+              
+            
+          </div>
+          <div class="row">
+            <div class =" col span-1-of-3">
+              <label for="">Newsletter?</label>
+
+            </div>
+            <div class=" col span-2-of-3">
+              <input type="checkbox" name="news" id="news" checked>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class =" col span-1-of-3">
+              <label for="">Drop a line</label>
+
+            </div>
+            <div class=" col span-2-of-3">
+             <textarea name="text" id="ta" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class =" col span-1-of-3">
+              <label for="">&nbsp;</label>
+
+            </div>
+            <div class=" col span-2-of-3">
+              <input type="submit" value="send-me">
+
+            </div>
+          </div>
+        </form>
+        </section>
+        <footer class="">
+          <div class="row">
+            <div class=" col span-1-of-2">
+                <ul class="footer-nav">
+                  <li><a href="#">About us </a></li>
+                  <li><a href="#">Blog </a></li>
+                  <li><a href="#">Press </a></li>
+                  <li><a href="#">IOS App </a></li>
+                  <li><a href="#">Android App </a></li>
+                </ul>
+            </div>
+            <div class=" col span-1-of-2">
+              <ul class="social-link">
+              <li><ion-icon name="logo-facebook" class="fb"></ion-icon></li>
+              <li><ion-icon name="logo-twitter" class="twitter"></ion-icon></li>
+              <li><ion-icon name="logo-google"class="google"></ion-icon></li>
+              <li><ion-icon name="logo-instagram" class="insta"></ion-icon></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <p>Copyright &copy 2015 by omnifood.All rights reserved</p><!-- special icon for copy write-->
+          </div>
+        </footer>
+
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><!-- it is used to includre the icons from the ionicon-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+       $(document).ready(function(){
+         // Add smooth scrolling to all links
+         $("a").on('click', function(event) {
+       
+           // Make sure this.hash has a value before overriding default behavior
+           if (this.hash !== "") {
+             // Prevent default anchor click behavior
+             event.preventDefault();
+       
+             // Store hash
+             var hash = this.hash;
+       
+             // Using jQuery's animate() method to add smooth page scroll
+             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+             $('html, body').animate({
+               scrollTop: $(hash).offset().top
+             }, 800, function(){
+       
+               // Add hash (#) to URL when done scrolling (default click behavior)
+               window.location.hash = hash;
+             });
+           } // End if
+         });
+       });
+       </script>
+       <script>
+        AOS.init();//initilise the AOS framework
+      </script>
+      </body>
+</html>
